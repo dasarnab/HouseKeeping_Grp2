@@ -1,0 +1,167 @@
+
+.mybody{
+    background-color:white;
+    padding: 0px;
+}
+
+.mynav{
+    background-color: #7FCF78;
+    margin-bottom: 0px;
+    padding-left:200px;
+    padding-bottom: 200px;
+}
+.main-container{
+    background-color:#CAFCC5;
+    padding-top:40px;
+}
+li{
+	font-size: 15px;
+	color: rgba(21, 7, 73, 0.959);
+}
+
+li.myuser{
+	position: absolute;
+	right: 50px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.rightsidediv{
+	background-color:white;
+    padding: 70px 50px;
+    padding-bottom: 100px;
+	margin-left: 50px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.amountwrapper{
+	padding-top: 2px;
+}
+
+.qty {
+    width: 35px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	background: #2eb82e;
+	color: white;
+}
+
+input.qtyplus { 
+	width:31px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+input.qtyminus { 
+	width:30px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+.inputdiv{
+	margin-bottom: 30px;
+}
+
+.lastInput{
+	margin-top: 100px;
+}
+
+.inputdiv input, .inputdiv select{
+	border: 2px solid #2eb82e;
+}
+
+.inputdiv label{
+	text-align: right;
+}
+
+.leftside{
+    float: right;
+	background-color:greenyellow;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding-bottom: 120px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+ .leftsidediv{
+	/* float: right;
+	background-color:greenyellow;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding-bottom: 120px;
+	margin-bottom: 5px;
+    margin-top: 5px; */
+    background-color:white;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:0px;
+    margin-right:15px;
+    margin-left: 5px;
+    border-bottom:3px solid rgb(236, 226, 226);
+    padding-bottom: 110px;
+}  
+
+.leftsidediv h2{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.myspan{
+	padding-top: 2px;
+	font-size: 18px;
+}
+
+.leftsidediv .myspan1{
+	padding-top: 5px;
+}
+
+ .leftsidediv1{
+	/* float: right;
+	background-color:greenyellow;
+	margin-right: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+    padding-bottom: 10px; */
+    background-color:white;
+    margin-right: 15px;
+    margin-left:5px;
+    border-radius: 5px;
+    margin-top:0px;
+    
+    padding-top:15px;
+    padding-left:1px;
+    padding-right:1px;
+
+} 
+
+.leftsidediv1 .myspan2{
+	padding-top: 21px;
+	font-size: 18px;
+    text-align: right;
+    background-color:white;
+}
+
+.leftsidediv1 p{
+	margin-bottom: 40px;
+}
+.subtotal{
+    background-color:white;
+}
+.submit{
+    margin-top:5px;
+    padding: 2px;
+    background-color: white;
+}
+.comment{
+    margin-bottom: 10px;
+}

@@ -1,20 +1,164 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Demo</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class = "container-fluid mybody">
+<nav class="navbar navbar-default mynav">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<a class="navbar-brand" href="#">DEMO</a>
+    	</div>
+    	<ul class="nav navbar-nav ">
+      		<li><a href="#">Home</a></li>
+      		<li><a href="#">Hotels</a></li>
+      		<li><a href="#">Services</a></li>
+      		<li><a href="#">Contact us</a></li>
+      		<li class="myuser"><a href="#">Welcome User</a></li>
+    	</ul>
+  	</div>
+</nav>
+<div class = "container-fluid main-container">
 
+<div class = "row">
+<div class="col-sm-7 rightsidediv">  
+	<form>
+	  	<div class="form-group row inputdiv">
+	    	<label for="inputRoomNo." class="col-sm-4 col-form-label">Room No.</label>
+	    	<div class="col-sm-4">
+	      		<input type="text" class="form-control" id="inputRoomNo" placeholder="Enter Room no.">
+	    	</div>
+	  	</div>
+	  	<div class="form-group row inputdiv">
+    		<label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Category</label>
+    		<div class="col-sm-4">
+	    		<select class="form-control" id="exampleFormControlSelect1">
+	      			<option>1</option>
+	      			<option>2</option>
+	      			<option>3</option>
+	      			<option>4</option>
+	      			<option>5</option>
+	    		</select>
+	    	</div>
+    	</div>
+    	<div class="form-group row inputdiv">
+    		<label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Sub-Category</label>
+    		<div class="col-sm-4">
+	    		<select class="form-control" id="exampleFormControlSelect1">
+	      			<option>Tea</option>
+	      			<option>Cofee</option>
+	      			<option>Shirt</option>
+	      			<option>Trousers</option>
+	      			<option>Jacket</option>
+	    		</select>
+	    	</div>
+        <span class="col col-sm-1 myspan"> &#8377;50</span>
+        
+	    	<div class="amountwrapper col col-sm-2">
+		    	<input type='button' value='-' class="qtyminus" field='quantity' />
+		    	<input type='text' name='quantity' value='0' class='qty' />
+		    	<input type='button' value='+' class='qtyplus' field='quantity' />
+    		</div>
+    	</div>
+		<div class="form-group row inputdiv lastInput">
+		  	<label for="targetServiceTime" class="col-sm-4 col-form-label">Target Service Time</label>
+		    <div class='col-sm-4'>        
+		       	<div class="input-group date" data-date-format="dd.mm.yyyy">
+		           	<input  type="text" class="form-control" placeholder="dd-mm-yyyy">
+	            	<div class="input-group-addon" >
+	              		<span class="glyphicon glyphicon-th"></span>		            	
+	              	</div>
+		        </div>
+		    </div>    
+		</div>
+	</form>
+</div>
+<div class = "col-md-4 leftside">
+
+  <div class="row leftsidediv">
+<div class="col-md-12 ">
+	<h2>Your Request Details</h2>
+	<span class="col col-sm-3 myspan">Tea</span>
+	<div class="amountwrapper col col-sm-4">
+		<input type='button' value='-' class="qtyminus" field='quantity' />
+		<input type='text' name='quantity' value='0' class='qty' />
+		<input type='button' value='+' class='qtyplus' field='quantity' />
+    </div>
+    <span class="col col-sm-2 myspan1">x 50</span>
+    <span class="col col-sm-3 myspan"> &#8377;50</span>
+</div>
+</div>
+
+<div class = "row leftsidediv1">
+<div class="col-md-12 ">
+	<div class="row subtotal">
+		<span class="col col-sm-6"><h3>Subtotal</h3></span>
+		<span class="col col-sm-5 myspan2">50</span>
+	</div>
+  <div>(plus taxes)</div>
+  <div class="form-group submit">
+  <textarea class="form-control comment" rows="2" id="comment"></textarea>
+  <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+  </div>
+  
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- <script type="text/javascript">
+
+	jQuery(document).ready(function(){
+    // This button will increment the value
+    $('.qtyplus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
+</script> -->
+</body>
+</html>
