@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,106 +11,39 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+		
 <div class = "container-fluid mybody">
-<nav class="navbar navbar-default mynav">
-  	<div class="container-fluid">
-    	<div class="navbar-header">
-      		<a class="navbar-brand" href="#">DEMO</a>
-    	</div>
-    	<ul class="nav navbar-nav ">
-      		<li><a href="#">Home</a></li>
-      		<li><a href="#">Hotels</a></li>
-      		<li><a href="#">Services</a></li>
-      		<li><a href="#">Contact us</a></li>
-      		<li class="myuser"><a href="#">Welcome User</a></li>
-    	</ul>
-  	</div>
-</nav>
+<app-nav></app-nav>
 <div class = "container-fluid main-container">
 
 <div class = "row">
-<div class="col-sm-7 rightsidediv">  
-	<form>
-	  	<div class="form-group row inputdiv">
-	    	<label for="inputRoomNo." class="col-sm-4 col-form-label">Room No.</label>
-	    	<div class="col-sm-4">
-	      		<input type="text" class="form-control" id="inputRoomNo" placeholder="Enter Room no.">
-	    	</div>
-	  	</div>
-	  	<div class="form-group row inputdiv">
-    		<label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Category</label>
-    		<div class="col-sm-4">
-	    		<select class="form-control" id="exampleFormControlSelect1">
-	      			<option>1</option>
-	      			<option>2</option>
-	      			<option>3</option>
-	      			<option>4</option>
-	      			<option>5</option>
-	    		</select>
-	    	</div>
-    	</div>
-    	<div class="form-group row inputdiv">
-    		<label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Sub-Category</label>
-    		<div class="col-sm-4">
-	    		<select class="form-control" id="exampleFormControlSelect1">
-	      			<option>Tea</option>
-	      			<option>Cofee</option>
-	      			<option>Shirt</option>
-	      			<option>Trousers</option>
-	      			<option>Jacket</option>
-	    		</select>
-	    	</div>
-        <span class="col col-sm-1 myspan"> &#8377;50</span>
-        
-	    	<div class="amountwrapper col col-sm-2">
-		    	<input type='button' value='-' class="qtyminus" field='quantity' />
-		    	<input type='text' name='quantity' value='0' class='qty' />
-		    	<input type='button' value='+' class='qtyplus' field='quantity' />
-    		</div>
-    	</div>
-		<div class="form-group row inputdiv lastInput">
-		  	<label for="targetServiceTime" class="col-sm-4 col-form-label">Target Service Time</label>
-		    <div class='col-sm-4'>        
-		       	<div class="input-group date" data-date-format="dd.mm.yyyy">
-		           	<input  type="text" class="form-control" placeholder="dd-mm-yyyy">
-	            	<div class="input-group-addon" >
-	              		<span class="glyphicon glyphicon-th"></span>		            	
-	              	</div>
-		        </div>
-		    </div>    
-		</div>
-	</form>
-</div>
+	<app-right-side-div></app-right-side-div>
 <div class = "col-md-4 leftside">
 
-  <div class="row leftsidediv">
-<div class="col-md-12 ">
-	<h2>Your Request Details</h2>
-	<span class="col col-sm-3 myspan">Tea</span>
-	<div class="amountwrapper col col-sm-4">
-		<input type='button' value='-' class="qtyminus" field='quantity' />
-		<input type='text' name='quantity' value='0' class='qty' />
-		<input type='button' value='+' class='qtyplus' field='quantity' />
-    </div>
-    <span class="col col-sm-2 myspan1">x 50</span>
-    <span class="col col-sm-3 myspan"> &#8377;50</span>
-</div>
-</div>
-
-<div class = "row leftsidediv1">
-<div class="col-md-12 ">
-	<div class="row subtotal">
-		<span class="col col-sm-6"><h3>Subtotal</h3></span>
-		<span class="col col-sm-5 myspan2">50</span>
+	<div class="row leftsidediv">
+		<div class="col-md-12 ">
+			<h2>Your Request Details</h2>
+			<span class="col col-sm-3 myspan">Tea</span>
+			<app-calculate-button></app-calculate-button>
+			<span class="col col-sm-2 myspan1">x 50</span>
+			<span class="col col-sm-3 myspan"> &#8377;50</span>
+		</div>
 	</div>
-  <div>(plus taxes)</div>
-  <div class="form-group submit">
-  <textarea class="form-control comment" rows="2" id="comment"></textarea>
-  <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
-  </div>
-  
-</div>
-</div>
+
+	<div class = "row leftsidediv1">
+		<div class="col-md-12 ">
+			<div class="row subtotal">
+				<span class="col col-sm-6"><h3>Subtotal</h3></span>
+				<span class="col col-sm-5 myspan2">50</span>
+			</div>
+			<div>(plus taxes)</div>
+			<div class="form-group submit">
+				<textarea class="form-control comment" rows="2" id="comment"></textarea>
+				<button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+			</div>
+		
+		</div>
+	</div>
 
 </div>
 

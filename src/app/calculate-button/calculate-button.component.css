@@ -1,0 +1,31 @@
+.qty {
+    width: 35px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	background: #2eb82e;
+	color: white;
+}
+
+input.qtyplus { 
+	width:31px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+input.qtyminus { 
+	width:30px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+
+.amountwrapper{
+	padding-top: 2px;
+}

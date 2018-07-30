@@ -1,0 +1,64 @@
+.rightsidediv{
+	background-color:white;
+    padding: 70px 20px;
+    padding-right:0px;
+    padding-bottom: 140px;
+	margin-left: 50px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.inputdiv{
+	margin-bottom: 30px;
+}
+.inputdiv input, .inputdiv select{
+	border: 2px solid #2eb82e;
+}
+.amountwrapper{
+	padding-top: 2px;
+}
+
+.myspan{
+	padding-top: 2px;
+	font-size: 18px;
+}
+
+.qty {
+    width: 35px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	background: #2eb82e;
+	color: white;
+}
+
+input.qtyplus { 
+	width:31px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+input.qtyminus { 
+	width:30px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+
+.lastInput{
+	margin-top: 50px;
+}
+
+.incrementbutton{
+    float:right;
+}
+
+.dropdown{
+    padding-left:0px;
+}

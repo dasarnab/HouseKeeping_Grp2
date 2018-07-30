@@ -2,14 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { RequestComponent } from './request/request.component';
+import { NavComponent } from './nav/nav.component';
+import { RightSideDivComponent } from './right-side-div/right-side-div.component';
+import { CalculateButtonComponent } from './calculate-button/calculate-button.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    RequestComponent
+    NavComponent,
+    RightSideDivComponent,
+    CalculateButtonComponent,
   ],
   imports: [
     BrowserModule
