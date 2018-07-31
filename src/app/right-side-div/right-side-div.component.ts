@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RightSideDivComponent implements OnInit {
 
+  public amount = "";
   constructor() { }
 
   ngOnInit() {

@@ -1,0 +1,9 @@
+<div class="row leftsidediv">
+    <div class="col-md-12 ">
+      <h2>Your Request Details</h2>
+      <span class="col col-sm-3 myspan">Tea</span>
+      <app-calculate-button (counterEvent)="amount =$event"></app-calculate-button>
+      <span class="col col-sm-2 myspan1">x 50</span>
+      <span class="col col-sm-3 myspan"> &#8377;{{50*amount}}</span>
+    </div>
+  </div>

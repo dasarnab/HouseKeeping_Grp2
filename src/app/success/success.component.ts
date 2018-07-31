@@ -9,7 +9,7 @@ export class SuccessComponent implements OnInit {
 
 
   constructor() { }
-  public isShowing = "none";
+  public visible = "";
   ngOnInit() {
   }
 

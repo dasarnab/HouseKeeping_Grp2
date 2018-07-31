@@ -14,6 +14,9 @@
 .inputdiv input, .inputdiv select{
 	border: 2px solid #2eb82e;
 }
+.inputdiv label{
+	text-align: right;
+}
 .amountwrapper{
 	padding-top: 2px;
 }

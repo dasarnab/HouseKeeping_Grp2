@@ -31,8 +31,8 @@
                 <option>Jacket</option>
             </select>
           </div>
-          <span class="col col-sm-2 myspan"> &#8377;50</span>
-          <app-calculate-button></app-calculate-button>
+          <span class="col col-sm-2 myspan"> &#8377;{{50*amount}}</span>
+          <app-calculate-button (counterEvent)="amount =$event"></app-calculate-button>
          </div>
          
         </div>

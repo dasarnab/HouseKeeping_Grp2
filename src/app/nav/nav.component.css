@@ -1,6 +1,19 @@
+.mynav li{
+	font-size: 15px;
+	color: rgba(216, 29, 16, 0.959);
+}
+
 .mynav{
     background-color: #7FCF78;
     margin-bottom: 0px;
     padding-left:200px;
     padding-bottom: 20px;
+    
+}
+
+li.myuser{
+	position: absolute;
+	right: 50px;
+	font-size: 15px;
+	font-weight: bold;
 }

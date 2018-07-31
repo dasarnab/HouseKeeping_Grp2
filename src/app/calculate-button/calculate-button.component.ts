@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter,Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculate-button',
@@ -10,9 +10,10 @@ export class CalculateButtonComponent implements OnInit {
   constructor() { }
 
   public counter : number = 0;
-    
+  @Output() public counterEvent = new EventEmitter();
   increment(){
     this.counter += 1;
+    this.counterEvent.emit(this.counter);
   }
   
   decrement(){
@@ -22,6 +23,7 @@ export class CalculateButtonComponent implements OnInit {
     else{
       this.counter =0;
     }
+    this.counterEvent.emit(this.counter);
   }
 
   ngOnInit() {

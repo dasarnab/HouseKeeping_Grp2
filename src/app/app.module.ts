@@ -6,6 +6,9 @@ import { NavComponent } from './nav/nav.component';
 import { RightSideDivComponent } from './right-side-div/right-side-div.component';
 import { CalculateButtonComponent } from './calculate-button/calculate-button.component';
 import { SuccessComponent } from './success/success.component';
+import { TopLeftDivComponent } from './top-left-div/top-left-div.component';
+import { LeftDivComponent } from './left-div/left-div.component';
+import { BottomLeftDivComponent } from './bottom-left-div/bottom-left-div.component';
 
 
 
@@ -16,6 +19,9 @@ import { SuccessComponent } from './success/success.component';
     RightSideDivComponent,
     CalculateButtonComponent,
     SuccessComponent,
+    TopLeftDivComponent,
+    LeftDivComponent,
+    BottomLeftDivComponent,
   ],
   imports: [
     BrowserModule

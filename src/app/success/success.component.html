@@ -1,14 +1,15 @@
-<div class="conatainer successTab">
-  <div class="row">
-   <div class="col-md-8">
-  <p >
+<div class="conatainer successTab" [style.visibility] = "visible">
+  <div class="row message">
+   <div class="col-md-8 message">
+  <p style = "color: rgb(2, 131, 24)">
     <strong>Success!</strong> Your request has been successfully created 
   </p>
   </div>
 
-  <div class="col-md-2"><strong>X</strong></div>
+  <div class="col-md-4"><input type = "button" value = "X"class = "crossButton" (click)="visible = 'hidden';"/>
 </div>
 
 
+</div>
 </div>
 
