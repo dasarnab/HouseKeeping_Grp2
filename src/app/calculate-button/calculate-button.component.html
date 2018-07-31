@@ -1,12 +1,6 @@
 
 <div class="amountwrapper col col-sm-4">
-    <input type='button' value='-' class="qtyminus" field='quantity' />
-    <input type='text' name='quantity' value='0' class='qty' />
-    <input type='button' value='+' class='qtyplus' field='quantity' />
+    <input type='button' value='-' class="qtyminus" field='quantity' (click)="decrement()" />
+    <input type='text' name='quantity' value='{{counter}}' class='qty' />
+    <input type='button' value='+' class='qtyplus' field='quantity'(click)="increment()" />
   </div>
-
-  	<!-- <div class="amountwrapper col col-sm-4">
-		<input type='button' value='-' class="qtyminus" field='quantity' />
-		<input type='text' name='quantity' value='0' class='qty' />
-		<input type='button' value='+' class='qtyplus' field='quantity' />
-	</div> -->

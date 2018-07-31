@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { RightSideDivComponent } from './right-side-div/right-side-div.component';
 import { CalculateButtonComponent } from './calculate-button/calculate-button.component';
+import { SuccessComponent } from './success/success.component';
 
 
 
@@ -14,6 +15,7 @@ import { CalculateButtonComponent } from './calculate-button/calculate-button.co
     NavComponent,
     RightSideDivComponent,
     CalculateButtonComponent,
+    SuccessComponent,
   ],
   imports: [
     BrowserModule
