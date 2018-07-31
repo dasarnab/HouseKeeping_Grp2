@@ -1,0 +1,11 @@
+.successTab{
+    padding-bottom: 20px;
+    padding-top:10px;
+    padding-left:50px;
+    background-color: red;
+    width:50%;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+     margin-right: auto
+}
