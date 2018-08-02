@@ -10,19 +10,12 @@
 </head>
 <body>
 		
-<div class = "container-fluid mybody">
-	<app-nav></app-nav>
-	<div class = "container-fluid main-container">
-		<app-success></app-success>
-		<div class = "row">
-			<app-right-side-div></app-right-side-div>
-			<app-left-div></app-left-div>
-		</div>
 
-	</div>
+<button type = "button" class="btn btn-success btn-lg btn-block" routerLink = "/login" >Login</button>
+<button type = "button" class="btn btn-success btn-lg btn-block" routerLink = "/housekeeping">HouseKeeping</button>
 
+<router-outlet></router-outlet>
 
-</div>
 
 </body>
 </html>
