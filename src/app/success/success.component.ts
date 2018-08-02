@@ -1,5 +1,6 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { SuccessService } from '../success.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-success',
@@ -9,18 +10,22 @@ import { SuccessService } from '../success.service';
 })
 export class SuccessComponent implements OnInit {
 
+  public visible:Observable<string>;
+  public param:string;
 
-  constructor(private _success : SuccessService) { }
-  public visible = this._success.isVisible;
+  constructor(private _success : SuccessService) {
+   //this.visible = _success.isVisible
+  //  this.visible.subscribe(data=>{
+  //     this.param=data;
+  //  })
+    this.param="hidden";
+  
+   }
+  
   ngOnInit() {
-    this.visible = this._success.isVisible;
+    this._success.isVisible.subscribe(data => this.param = data);
   }
 
-  ngOnChanges(change :SimpleChanges ){
-    console.log("hi");
-    this.visible = this._success.isVisible;
 
-
-  }
 
 }

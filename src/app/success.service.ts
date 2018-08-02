@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Observable,Subject} from 'rxjs';
+import { Observable,Subject, observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SuccessService {
-  public isVisible ="";
+  isVisible : Observable<string>;
 
   private visibleSubject: Subject<string>;
   constructor() { 
-    // this.visibleSubject = new Subject<string>();
-    this.isVisible = "hidden";
+    this.visibleSubject = new Subject<string>();
+    this.isVisible =  this.visibleSubject.asObservable();
   }
 
-  makeVisible(){
+  makeVisible(visibility:string){
     //console.log("jnsjvcnds");
+    this.visibleSubject.next(visibility);
     
-    this.isVisible = "visible";
   }
 }

@@ -11,19 +11,14 @@ export class BottomLeftDivComponent implements OnInit {
   constructor(private _submitService : SuccessService) { }
   public submitVisibility="";
   ngOnInit() {
-
+    this._submitService.isVisible.subscribe(data => this.submitVisibility = data);
   }
   submit(){
     //console.log("hi");
-    this._submitService.makeVisible();
-    this.submitVisibility = "visible";
+    this._submitService.makeVisible("visible");
+  
   }
 
-  ngOnChanges(change :SimpleChanges ){
-    console.log("hello");
-    
 
-
-  }
 
 }
