@@ -9,3 +9,116 @@
 }
 
 
+.leftsidediv{
+	/* float: right;
+	background-color:greenyellow;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding-bottom: 120px;
+	margin-bottom: 5px;
+    margin-top: 5px; */
+    background-color:white;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom:0px;
+    margin-right:15px;
+    margin-left: 5px;
+    border-bottom:3px solid rgb(236, 226, 226);
+    padding-bottom: 110px;
+} 
+
+.leftsidediv h2{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.myspan{
+	padding-top: 2px;
+	font-size: 18px;
+}
+
+.leftsidediv .myspan1{
+	padding-top: 5px;
+}
+
+
+.leftsidediv1{
+	/* float: right;
+	background-color:greenyellow;
+	margin-right: 20px;
+	border-radius: 5px;
+	margin-top: 5px;
+    padding-bottom: 10px; */
+    background-color:white;
+    margin-right: 15px;
+    margin-left:5px;
+    border-radius: 5px;
+    margin-top:0px;
+    
+    padding-top:15px;
+    padding-left:1px;
+    padding-right:1px;
+
+} 
+.leftsidediv1 p{
+	margin-bottom: 40px;
+}
+
+
+.leftsidediv1 .myspan2{
+	padding-top: 5px;
+	font-size: 18px;
+    text-align: right;
+    background-color:white;
+}
+
+.subtotal{
+    background-color:white;
+}
+
+.submit{
+    margin-top:5px;
+    padding: 2px;
+    background-color: white;
+}
+.comment{
+    margin-bottom: 10px;
+    max-width:100%;
+    max-height: 70px;
+    min-height: 70px;
+    min-width: 100%;
+    
+}
+
+.qty {
+    width: 35px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	background: #2eb82e;
+	color: white;
+}
+
+input.qtyplus { 
+	width:31px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+input.qtyminus { 
+	width:30px; 
+	height:30px;
+	border: 2px solid #2eb82e;
+	background-color: white;
+	border-radius: 3px;
+	text-align: center;
+	margin: -5px;
+}
+
+.amountwrapper{
+	padding-top: 2px;
+}
