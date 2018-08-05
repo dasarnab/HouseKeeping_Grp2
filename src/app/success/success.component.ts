@@ -6,22 +6,21 @@ import { Observable } from 'rxjs';
   selector: 'app-success',
   templateUrl: './success.component.html',
   styleUrls: ['./success.component.css'],
-  
 })
 export class SuccessComponent implements OnInit {
 
-  public visible:Observable<string>;
-  public param:string;
+  public visible: Observable<string>;
+  public param: string;
 
-  constructor(private _success : SuccessService) {
-   //this.visible = _success.isVisible
+  constructor(private _success: SuccessService) {
+   // this.visible = _success.isVisible
   //  this.visible.subscribe(data=>{
   //     this.param=data;
   //  })
-    this.param="hidden";
-  
+    this.param = 'hidden';
+
    }
-  
+
   ngOnInit() {
     this._success.isVisible.subscribe(data => this.param = data);
   }

@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import {AppRoutingModule,routingComponents} from './app-routing.module';
-
-
+import {HttpClientModule} from '@angular/common/http';
+import {AppRoutingModule, routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
-
- import { SuccessService } from './success.service';
+import { SuccessService } from './success.service';
+import {CategoryService} from './category.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,14 +13,15 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-
     routingComponents
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [SuccessService],
+  providers: [SuccessService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
