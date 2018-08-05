@@ -8,8 +8,8 @@
           <div class="amountwrapper col col-sm-4">
             <input type='text' disabled name='quantity' value={{count}} class='qty' />
           </div>
-        <span class="col col-sm-2 myspan1">x 50</span>
-        <span class="col col-sm-3 myspan"> &#8377;{{50*count}}</span>
+        <span class="col col-sm-2 myspan1">x {{unitPrice}}</span>
+        <span class="col col-sm-3 myspan"> &#8377;{{totalPrice}}</span>
       </div>
     </div>
 
@@ -20,7 +20,7 @@
     <div class="col-sm-12 ">
       <div class="row subtotal">
         <span class="col col-sm-5"><h4>Subtotal</h4></span>
-        <span class="col col-sm-6 myspan2">{{59*count}}</span>
+        <span class="col col-sm-6 myspan2">{{totalPrice}}</span>
       </div>
       <div>(plus taxes)</div>
       <div class="form-group submit">

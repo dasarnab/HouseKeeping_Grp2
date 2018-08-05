@@ -39,7 +39,10 @@
 }
 
 .leftsidediv .myspan1{
-	padding-top: 5px;
+	min-width: 30%;
+	padding-top: 2px;
+	padding-right:20px;
+	font-size: 18px;
 }
 
 
@@ -121,4 +124,7 @@ input.qtyminus {
 
 .amountwrapper{
 	padding-top: 2px;
+	padding-right: 0px;
+	padding-left:5px;
+	max-width: 20%;
 }

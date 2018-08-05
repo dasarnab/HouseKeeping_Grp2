@@ -7,6 +7,8 @@ import { SuccessService } from '../success.service';
 })
 export class LeftDivComponent implements OnInit {
   @Input() count: number;
+  @Input() unitPrice: number;
+  @Input() totalPrice: number;
   constructor(private _submitService: SuccessService) { }
   public submitVisibility = '';
   ngOnInit() {

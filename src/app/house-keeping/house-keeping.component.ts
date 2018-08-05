@@ -11,9 +11,10 @@ export class HouseKeepingComponent implements OnInit {
 
   constructor(private _category: CategoryService) { }
   public counter = 0;
-  mainCategory: ICategories;
+  serviceCategory: ICategories;
   serviceId = '4';
   unitprice = 0;
+  totalPrice = 0;
   parentCategories: ICategories [];
 
   subCategories: ICategories [];
@@ -25,18 +26,32 @@ export class HouseKeepingComponent implements OnInit {
 
   increment() {
     this.counter++;
+    this.totalPrice = this.unitprice * this.counter;
   }
 
   decrement() {
     this.counter > 0 ? this.counter-- : this.counter = 0;
+    this.totalPrice = this.unitprice * this.counter;
   }
 
   callType(event: any) {
-    this.serviceId = event.target.value;
-    console.log('house' + this.serviceId);
+    if (this.serviceId !==  event.target.value) {
+      this.serviceId = event.target.value;
+      this.counter = 0;
+      this.totalPrice = 0;
+      this.unitprice = 0;
+      console.log('house' + this.serviceId);
+      this._category.getCategories(this.serviceId)
+      .subscribe((sub: ICategories[]) => this.subCategories = sub);
+    }
+  }
 
-    this._category.getCategories(this.serviceId)
-    .subscribe((sub: ICategories[]) => this.subCategories = sub);
+  showPrice(event: any) {
+    this.unitprice = event.target.value;
+    this.totalPrice = this.unitprice;
+    this.counter = 1;
+    console.log('price' + this.unitprice);
+
   }
 
 }

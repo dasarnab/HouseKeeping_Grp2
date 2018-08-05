@@ -18,18 +18,18 @@
             <select class="form-control" id="mainCategory" name = "mainCategory" (change)="callType($event)" >
                 <option *ngFor = "let category of parentCategories" [ngValue] = "category" [value] = "category.serviceTypeId" >"{{category.serviceTypeDesc}}"</option>
 			</select>
-			<p>"{{serviceId}}" </p>
           </div>
         </div>
         <div class="form-group row inputdiv">
           <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Sub-Category</label>
           <div class= "col-sm-8">
           <div class="col-sm-6 dropdown">
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option *ngFor = "let subCategory of subCategories">"{{subCategory.serviceTypeDesc}}"  </option>
+            <select class="form-control" id="exampleFormControlSelect1" name = "exampleFormControlSelect1"(change)="showPrice($event)">
+				<option>Sub Category</option>
+                <option *ngFor = "let subCategory of subCategories" [ngValue] = "subCategory" [value] = "subCategory.price">"{{subCategory.serviceTypeDesc}}"  </option>
             </select>
           </div>
-		  <span class="col col-sm-2 myspan"> &#8377;{{ 50 *counter}}</span>
+		  <span class="col col-sm-2 myspan"> &#8377;{{totalPrice}}</span>
 		  
 			<div class="amountwrapper col col-sm-4">
 				<input type='button' value='-' class="qtyminus" field='quantity' (click)="decrement()" />
@@ -65,7 +65,7 @@
 
 
 
-			<app-left-div [count] = counter></app-left-div>
+			<app-left-div [count] = counter [unitPrice] = unitprice [totalPrice] = totalPrice></app-left-div>
 		</div>
 
 	</div>
