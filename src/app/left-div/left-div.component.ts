@@ -9,6 +9,8 @@ export class LeftDivComponent implements OnInit {
   @Input() count: number;
   @Input() unitPrice: number;
   @Input() totalPrice: number;
+  @Input() request: string;
+
   constructor(private _submitService: SuccessService) { }
   public submitVisibility = '';
   ngOnInit() {

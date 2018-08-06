@@ -15,8 +15,8 @@
         <div class="form-group row inputdiv">
           <label for="mainCategory" class="col-sm-4 col-form-label">Service Category</label>
           <div class="col-sm-4">
-            <select class="form-control" id="mainCategory" name = "mainCategory" (change)="callType($event)" >
-                <option *ngFor = "let category of parentCategories" [ngValue] = "category" [value] = "category.serviceTypeId" >"{{category.serviceTypeDesc}}"</option>
+            <select class="form-control" id="mainCategory" name = "mainCategory" (ngModelChange)="callType($event)" (ngModel) = "parentCategories">
+				<option *ngFor = "let category of parentCategories" [ngValue] = "category">"{{category.serviceTypeDesc}}"</option>
 			</select>
           </div>
         </div>
@@ -24,9 +24,8 @@
           <label for="exampleFormControlSelect1" class="col-sm-4 col-form-label">Service Sub-Category</label>
           <div class= "col-sm-8">
           <div class="col-sm-6 dropdown">
-            <select class="form-control" id="exampleFormControlSelect1" name = "exampleFormControlSelect1"(change)="showPrice($event)">
-				<option>Sub Category</option>
-                <option *ngFor = "let subCategory of subCategories" [ngValue] = "subCategory" [value] = "subCategory.price">"{{subCategory.serviceTypeDesc}}"  </option>
+            <select class="form-control" id="exampleFormControlSelect1" name = "exampleFormControlSelect1" (ngModelChange)="showPrice($event)" (ngModel) = "subCategories">
+                <option *ngFor = "let subCategory of subCategories" [ngValue] = "subCategory">"{{subCategory.serviceTypeDesc}}"  </option>
             </select>
           </div>
 		  <span class="col col-sm-2 myspan"> &#8377;{{totalPrice}}</span>
@@ -60,12 +59,7 @@
 
 
 
-
-
-
-
-
-			<app-left-div [count] = counter [unitPrice] = unitprice [totalPrice] = totalPrice></app-left-div>
+			<app-left-div [count] = counter [unitPrice] = unitprice [totalPrice] = totalPrice [request] = request></app-left-div>
 		</div>
 
 	</div>

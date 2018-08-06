@@ -9,12 +9,16 @@ import { ICategories } from '../category';
   })
 export class HouseKeepingComponent implements OnInit {
 
-  constructor(private _category: CategoryService) { }
+  constructor(private _category: CategoryService) {
+
+   }
   public counter = 0;
   serviceCategory: ICategories;
-  serviceId = '4';
+  serviceSubCategory: ICategories;
+  serviceId = 2;
   unitprice = 0;
   totalPrice = 0;
+  request: string;
   parentCategories: ICategories [];
 
   subCategories: ICategories [];
@@ -34,22 +38,28 @@ export class HouseKeepingComponent implements OnInit {
     this.totalPrice = this.unitprice * this.counter;
   }
 
-  callType(event: any) {
-    if (this.serviceId !==  event.target.value) {
-      this.serviceId = event.target.value;
+  callType(event: ICategories) {
+    if (this.serviceId !==  event.serviceTypeId) {
+      this.serviceCategory = event;
+      this.serviceId = this.serviceCategory.serviceTypeId;
       this.counter = 0;
       this.totalPrice = 0;
       this.unitprice = 0;
-      console.log('house' + this.serviceId);
-      this._category.getCategories(this.serviceId)
+      this.request = this.serviceCategory.serviceTypeDesc;
+      // console.log('house' + this.serviceCategory.serviceTypeId.toString());
+      this._category.getCategories(this.serviceCategory.serviceTypeId.toString())
       .subscribe((sub: ICategories[]) => this.subCategories = sub);
     }
+    // console.log(event);
   }
 
-  showPrice(event: any) {
-    this.unitprice = event.target.value;
+  showPrice(event: ICategories) {
+    this.serviceSubCategory = event;
+    console.log(this.serviceSubCategory);
+    this.unitprice = event.price;
     this.totalPrice = this.unitprice;
     this.counter = 1;
+    this.request = event.serviceTypeDesc;
     console.log('price' + this.unitprice);
 
   }
